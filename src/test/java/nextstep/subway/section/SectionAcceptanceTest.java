@@ -226,7 +226,7 @@ public class SectionAcceptanceTest extends AcceptanceTest {
 
         // then
         assertAll(
-                () -> 삭제_요청_성공(신림역_제거_응답),
+                () -> 요청_성공(신림역_제거_응답),
                 () -> assertThat(지하철_노선_구간).containsExactly("사당역", "강남역")
         );
     }
@@ -249,7 +249,7 @@ public class SectionAcceptanceTest extends AcceptanceTest {
 
         // then
         assertAll(
-                () -> 삭제_요청_성공(강남역_제거_응답),
+                () -> 요청_성공(강남역_제거_응답),
                 () -> assertThat(지하철_노선_구간).containsExactly("신림역", "사당역")
         );
     }
@@ -273,7 +273,7 @@ public class SectionAcceptanceTest extends AcceptanceTest {
 
         // then
         assertAll(
-                () -> 삭제_요청_성공(사당역_제거_응답),
+                () -> 요청_성공(사당역_제거_응답),
                 () -> assertThat(지하철_노선_구간).containsExactly("신림역", "강남역")
         );
     }
