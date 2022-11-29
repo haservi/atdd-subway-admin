@@ -150,4 +150,7 @@ public class Sections {
                 .findFirst();
     }
 
+    public List<Section> sectionList() {
+        return sections.stream().collect(Collectors.toList());
+    }
 }

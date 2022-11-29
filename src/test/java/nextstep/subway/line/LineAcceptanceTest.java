@@ -155,7 +155,7 @@ public class LineAcceptanceTest extends AcceptanceTest {
         ExtractableResponse<Response> 지하철_노선_삭제_응답 = 지하철_노선_삭제_요청(지하철역_아이디);
 
         // then
-        assertThat(지하철_노선_삭제_응답.statusCode()).isEqualTo(HttpStatus.NO_CONTENT.value());
+        assertThat(지하철_노선_삭제_응답.statusCode()).isEqualTo(HttpStatus.OK.value());
     }
 
 }
